@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  --clr-paleblue: #e0e8ff;
+  --clr-brightblue: #3829e0;
+  --clr-verypaleblue: #f5f7ff;
+  --clr-desaturatedblue: #7280a7;
+  --clr-darkblue: #1f2f56;
+  /* Fonts Families */
+  --ff-primary: "Red Hat Display", sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 1.85rem;
+  --fs-stat: 1.5rem;
+  --fs-body: 1rem;
+  --fs-small: 0.75rem;
+  /* Fonts Weight */
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}
+
+h1 {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.75em;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-verypaleblue);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
