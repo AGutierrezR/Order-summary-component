@@ -100,6 +100,7 @@ th {
 }
 @media only screen and (min-width: 1440px) {
   :root {
+    --fs-title: 1.75rem;
     --fs-body: 1rem;
   }
 }
@@ -235,6 +236,8 @@ body {
 .order-summary__plan a {
   margin-left: auto;
   font-weight: var(--fw-bold);
+  color: var(--clr-brightblue);
+  font-size: 0.875rem;
 }
 .order-summary__plan a:hover {
   text-decoration: none;
