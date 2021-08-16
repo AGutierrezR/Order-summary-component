@@ -2,10 +2,13 @@ $colors: (
   primary: (
     paleblue: hsl(225, 100%, 94%),
     brightblue: hsl(245, 75%, 52%),
+    brightblue-hover: hsl(245, 75%, 52%, 0.7),
+    brightblue-shadow: hsla(245, 75%, 52%, 0.25),
   ),
   neutral: (
     verypaleblue: hsl(225, 100%, 98%),
     desaturatedblue: hsl(224, 23%, 55%),
     darkblue: hsl(223, 47%, 23%),
+    white: hsl(360, 100%, 100%),
   ),
 );

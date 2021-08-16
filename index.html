@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .attribution {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+        margin: 0 auto;
+      }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+      .attribution,
+      .attribution a {
+        color: var(--clr-white);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="order-summary">
+      <div class="order-summary__hero">
+        <img src="images/illustration-hero.svg" alt="" />
+      </div>
+      <section class="order-summary__content">
+        <h1 class="order-summary__title">Order Summary</h1>
+        <p class="order-summary__lead">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="order-summary__plan">
+          <img src="images/icon-music.svg" alt="" />
+          <p><span>Annual Plan</span> $59.99/year</p>
+          <a href="">Change</a>
+        </div>
+        <button class="btn btn--block btn--primary">Proceed to Payment</button>
+        <button class="btn">Cancel Order</button>
+      </section>
+    </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/AGutierrezR" target="_blank"
+        >Andres Gutierrez</a
+      >.
+    </footer>
+  </body>
 </html>

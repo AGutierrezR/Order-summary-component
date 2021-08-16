@@ -82,13 +82,16 @@ th {
 :root {
   --clr-paleblue: #e0e8ff;
   --clr-brightblue: #3829e0;
+  --clr-brightblue-hover: rgba(56, 41, 224, 0.7);
+  --clr-brightblue-shadow: rgba(56, 41, 224, 0.25);
   --clr-verypaleblue: #f5f7ff;
   --clr-desaturatedblue: #7280a7;
   --clr-darkblue: #1f2f56;
+  --clr-white: white;
   /* Fonts Families */
   --ff-primary: "Red Hat Display", sans-serif;
   /* Fonts Sizes */
-  --fs-title: 1.85rem;
+  --fs-title: 1.45rem;
   --fs-stat: 1.5rem;
   --fs-body: 1rem;
   --fs-small: 0.75rem;
@@ -105,6 +108,7 @@ th {
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
 h1 {
@@ -124,9 +128,126 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-color: var(--clr-verypaleblue);
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 100%;
+  background-color: var(--clr-paleblue);
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-color: var(--clr-paleblue);
+  }
+}
+
+.btn {
+  --bg-color: transparent;
+  --bg-color-hover: transparent;
+  --txt-color: var(--clr-desaturatedblue);
+  --txt-color-hover: var(--clr-darkblue);
+  text-align: center;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  outline: transparent;
+  border: 1px solid transparent;
+  font-weight: var(--fw-bold);
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--bg-color-hover);
+  color: var(--txt-color-hover);
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.btn--primary {
+  --bg-color: var(--clr-brightblue);
+  --bg-color-hover: var(--clr-brightblue-hover);
+  --txt-color: var(--clr-white);
+  --txt-color-hover: var(--clr-white);
+  -webkit-box-shadow: 0px 15px 20px var(--clr-brightblue-shadow);
+          box-shadow: 0px 15px 20px var(--clr-brightblue-shadow);
+}
+
+.order-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  max-width: 400px;
+  margin: auto 0;
+  color: var(--clr-desaturatedblue);
+  background-color: var(--clr-white);
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 20px 50px -7px var(--clr-brightblue-shadow);
+          box-shadow: 0px 20px 50px -7px var(--clr-brightblue-shadow);
+}
+.order-summary__hero img {
+  display: block;
+}
+.order-summary__content {
+  text-align: center;
+  padding: 1.25rem;
+}
+.order-summary__title {
+  color: var(--clr-darkblue);
+  font-weight: var(--fw-black);
+}
+.order-summary__lead {
+  max-width: 25ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25em;
+}
+.order-summary__plan {
+  font-size: 0.875em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin-bottom: 1.4286em;
+  padding: 0.9375rem;
+  background-color: var(--clr-verypaleblue);
+}
+.order-summary__plan img {
+  margin-right: 1.25rem;
+}
+.order-summary__plan span {
+  display: block;
+  font-weight: var(--fw-black);
+  color: var(--clr-darkblue);
+}
+.order-summary__plan a {
+  margin-left: auto;
+  font-weight: var(--fw-bold);
+}
+.order-summary__plan a:hover {
+  text-decoration: none;
+  color: var(--clr-brightblue-hover);
+}
+.order-summary .btn--primary {
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 1440px) {
+  .order-summary__content {
+    padding: 1.875rem 2.5rem;
+  }
+  .order-summary__plan {
+    padding: 1.25rem;
+  }
+  .order-summary__lead {
+    max-width: 30ch;
+  }
 }
