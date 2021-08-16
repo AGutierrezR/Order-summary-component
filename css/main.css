@@ -152,7 +152,7 @@ body {
   --txt-color-hover: var(--clr-darkblue);
   font-family: var(--ff-primary);
   font-size: 0.875rem;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-black);
   background-color: var(--bg-color);
   color: var(--txt-color);
   text-align: center;
@@ -188,7 +188,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 85%;
-  max-width: 420px;
+  max-width: 440px;
   margin: auto 0;
   color: var(--clr-desaturatedblue);
   background-color: var(--clr-white);
@@ -248,7 +248,7 @@ body {
 }
 @media only screen and (min-width: 1440px) {
   .order-summary__content {
-    padding: 1.875rem 2.5rem;
+    padding: 2.5rem;
   }
   .order-summary__plan {
     padding: 1.25rem;
