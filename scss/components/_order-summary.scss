@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  max-width: 400px;
+  max-width: 420px;
   margin: auto 0;
   color: var(--clr-desaturatedblue);
   background-color: var(--clr-white);
@@ -18,12 +18,11 @@
 
   &__content {
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.5625rem;
   }
 
   &__title {
     color: var(--clr-darkblue);
-    font-weight: var(--fw-black);
   }
 
   &__lead {
@@ -34,7 +33,6 @@
   }
 
   &__plan {
-    font-size: 0.875em;
     display: flex;
     align-items: center;
     border-radius: 10px;

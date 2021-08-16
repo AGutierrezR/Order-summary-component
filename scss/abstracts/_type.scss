@@ -1,14 +1,15 @@
 $type-scale: (
   mobile: (
-    title: 1.45rem,
-    stat: 1.5rem,
+    title: 1.325rem,
+    body: 0.875rem,
+  ),
+  desktop: (
     body: 1rem,
-    small: 0.75rem,
   ),
 );
 
 $type-weight: (
   medium: 500,
   bold: 700,
-  black: 900
+  black: 900,
 );
